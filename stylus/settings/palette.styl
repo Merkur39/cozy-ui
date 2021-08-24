@@ -135,7 +135,7 @@ html, .CozyTheme--normal
     --commonBlack         #000000
 
     /*
-    Primary
+    Primary colors
 
     Stylus: primaryMain         - #297EF2, CSS: var(--primaryMain)
     Stylus: primaryDark         - #0B61D6, CSS: var(--primaryDark)
@@ -152,7 +152,7 @@ html, .CozyTheme--normal
     --primaryContrastText var(--commonWhite)
 
     /*
-    Secondary
+    Secondary colors
 
     Stylus: secondaryMain         - #EA3F3F, CSS: var(--secondaryMain)
     Stylus: secondaryDark         - #D31F1F, CSS: var(--secondaryDark)
@@ -189,11 +189,43 @@ html, .CozyTheme--normal
 
     Stylus: textPrimary   - #383B43, CSS: var(--textPrimary)
     Stylus: textSecondary - #9D9EA1, CSS: var(--textSecondary)
+    Stylus: textDisabled - #BEBFC1, CSS: var(--textDisabled)
+    Stylus: textHint - #BEBFC1, CSS: var(--textHint)
+    Stylus: textIcon - #66686D, CSS: var(--textIcon)
 
     Styleguide Settings.theme.text
     */
     --textPrimary alpha(palette.Grey['900'], 0.9)
     --textSecondary alpha(palette.Grey['900'], 0.48)
+    --textDisabled alpha(palette.Grey['900'], 0.32)
+    --textHint alpha(palette.Grey['900'], 0.32)
+    --textIcon alpha(palette.Grey['900'], 0.72)
+
+    /*
+    Action colors
+
+    These colors use the alpha layer. Be careful to use the semantic variable.
+    Hexadecimal colors are here only as an example on a white background.
+
+    Stylus: actionActive   - #8A8C90, CSS: var(--actionActive)
+    Stylus: actionHover   - #F7F7F7, CSS: var(--actionHover)
+    Stylus: actionSelected   - #EFEFF0, CSS: var(--actionSelected)
+    Stylus: actionDisabled   - #CFCFD1, CSS: var(--actionDisabled)
+    Stylus: actionDisabledBackground   - #E7E7E8, CSS: var(--actionDisabledBackground)
+    Stylus: actionFocus   - #E7E7E8, CSS: var(--actionFocus)
+    Stylus: actionGhost   - #EFEFF0, CSS: var(--actionGhost)
+    Stylus: actionHoverGhost   - #DFE0E0, CSS: var(--actionHoverGhost)
+
+    Styleguide Settings.theme.action
+    */
+    --actionActive alpha(palette.Grey['900'], 0.56)
+    --actionHover alpha(palette.Grey['900'], 0.04)
+    --actionSelected alpha(palette.Grey['900'], 0.08)
+    --actionDisabled alpha(palette.Grey['900'], 0.24)
+    --actionDisabledBackground alpha(palette.Grey['900'], 0.12)
+    --actionFocus alpha(palette.Grey['900'], 0.12)
+    --actionGhost alpha(palette.Grey['900'], 0.08)
+    --actionHoverGhost alpha(palette.Grey['900'], 0.16)
 
     /*
     Components colors
@@ -208,23 +240,90 @@ html, .CozyTheme--normal
     --divider alpha(palette.Grey['900'], 0.12)
 
     /*
-    Intention colors
+    Border colors
 
-    Stylus: successMain -  #09AE1C, CSS: var(--successMain)
-    Stylus: warningMain -  #CB8100, CSS: var(--warningMain)
-    Stylus: errorMain   -  #EA3F3F, CSS: var(--errorMain)
-    Stylus: infoMain    -  #009FA2, CSS: var(--infoMain)
+    These colors use the alpha layer. Be careful to use the semantic variable.
+    Hexadecimal colors are here only as an example on a white background.
 
-    Styleguide Settings.theme.intention
+    Stylus: borderMain - #DFE0E0, CSS: var(--borderMain)
+    Stylus: borderDisabled - #EFEFF0, CSS: var(--borderDisabled)
+    Stylus: borderGhost - #9D9EA1, CSS: var(--borderGhost)
+    Stylus: borderGhostDisabled - #DFE0E0, CSS: var(--borderGhostDisabled)
+
+    Styleguide Settings.theme.border
     */
+    --borderMain alpha(palette.Grey['900'], 0.16)
+    --borderDisabled alpha(palette.Grey['900'], 0.08)
+    --borderGhost alpha(palette.Grey['900'], 0.48)
+    --borderGhostDisabled alpha(palette.Grey['900'], 0.16)
+
+    /*
+    Success colors
+
+    Stylus: successLight        -  #38C949, CSS: var(--successLight)
+    Stylus: successMain         -  #09AE1C, CSS: var(--successMain)
+    Stylus: successDark         -  #018711, CSS: var(--successDark)
+    Stylus: successContrastText -  #FFF, CSS: var(--successContrastText)
+
+    Styleguide Settings.theme.success
+    */
+    --successLight palette.Success['500']
     --successMain palette.Success['600']
-    --warningMain palette.Warning['600']
+    --successDark palette.Success['700']
+    --successContrastText var(--commonWhite)
+
+    /*
+    Error colors
+
+    Stylus: errorLightest     -  #FF9B9B, CSS: var(--errorLightest)
+    Stylus: errorLight        -  #F96B6B, CSS: var(--errorLight)
+    Stylus: errorMain         -  #EA3F3F, CSS: var(--errorMain)
+    Stylus: errorDark         -  #D31F1F, CSS: var(--errorDark)
+    Stylus: errorContrastText -  #FFF, CSS: var(--errorContrastText)
+    Stylus: errorBackground   -  #FFF, CSS: var(--errorBackground)
+
+    Styleguide Settings.theme.error
+    */
+    --errorLightest palette.Error['400']
+    --errorLight palette.Error['500']
     --errorMain palette.Error['600']
     --errorDark palette.Error['700']
-    --errorLight palette.Error['500']
-    --errorLightest palette.Error['400']
-    --infoMain palette.Info['600']
+    --errorContrastText var(--commonWhite)
     --errorBackground var(--commonWhite)
+
+    /*
+    Warning colors
+
+    Stylus: warningLight        -  #EFA82F, CSS: var(--warningLight)
+    Stylus: warningMain         -  #CB8100, CSS: var(--warningMain)
+    Stylus: warningDark         -  #986100, CSS: var(--warningDark)
+    Stylus: warningContrastText -  #FFF, CSS: var(--warningContrastText)
+
+    Styleguide Settings.theme.warning
+    */
+    --warningLight palette.Warning['500']
+    --warningMain palette.Warning['600']
+    --warningDark palette.Warning['700']
+    --warningContrastText var(--commonWhite)
+
+    /*
+    Info colors
+
+    Stylus: infoLight        -  #0EC4C7, CSS: var(--infoLight)
+    Stylus: infoMain         -  #009FA2, CSS: var(--infoMain)
+    Stylus: infoDark         -  #007578, CSS: var(--infoDark)
+    Stylus: infoContrastText -  #FFF, CSS: var(--infoContrastText)
+
+    Styleguide Settings.theme.info
+    */
+    --infoLight palette.Info['500']
+    --infoMain palette.Info['600']
+    --infoDark palette.Info['700']
+    --infoContrastText var(--commonWhite)
+
+    /*
+    -----------------------------------------------------------------------
+    */
 
     /*
     The CSS variables below are historic and we should strive not to
