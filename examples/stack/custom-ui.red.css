@@ -1,9 +1,9 @@
 :root {
   --dodgerBlue: #cc0000;
   --scienceBlue: #ab0000;
-  --primaryColor: #cc0000;
-  --primaryColorLight: #fc4949;
-  --primaryColorLightest: #fca2ab;
+  --primaryMain: #cc0000;
+  --primaryLight: #fc4949;
+  --primaryLightest: #fca2ab;
   --zircon: #fff5f6;
   --charcoalGrey: #000000;
   --primaryFont: 'Helvetica Neue', Helvetica, Arial, sans-serif ;

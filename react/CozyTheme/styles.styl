@@ -6,13 +6,13 @@ $translucentWhite2=rgba(255, 255, 255, 0.88)
 $translucentWhite3=rgba(255, 255, 255, 0.16)
 
 :root
-    --invertedBackgroundColor: var(--primaryColor)
-    --invertedContrastTextColor: var(--primaryContrastTextColor)
+    --invertedBackgroundColor: var(--primaryMain)
+    --invertedContrastTextColor: var(--primaryContrastText)
 
 .CozyTheme--inverted
-    --primaryTextColor: var(--invertedContrastTextColor)
-    --secondaryTextColor: var(--invertedContrastTextColor)
-    --iconColor: var(--secondaryTextColor)
+    --textPrimary: var(--invertedContrastTextColor)
+    --textSecondary: var(--invertedContrastTextColor)
+    --iconColor: var(--textSecondary)
     --textIconColor: var(--invertedContrastTextColor)
     --barIconColor var(--invertedContrastTextColor)
     --barIconColorDisabled $translucentWhite2
@@ -32,13 +32,13 @@ $translucentWhite3=rgba(255, 255, 255, 0.16)
     --secondaryButtonActiveColor: $translucentWhite1
     --secondaryButtonContrastColor: var(--invertedContrastTextColor)
 
-    --errorColor: palette.Error['200']
-    --successColor: palette.Success['200']
-    --warningColor: palette.Warning['200']
+    --errorMain: palette.Error['200']
+    --successMain: palette.Success['200']
+    --warningMain: palette.Warning['200']
 
-    --paperBackgroundColor: var(--primaryColor)
-    --defaultBackgroundColor: var(--primaryColorDark)
-    --dividerColor: $translucentWhite3
+    --backgroundPaper: var(--primaryMain)
+    --backgroundDefault: var(--primaryDark)
+    --divider: $translucentWhite3
     --dividerColor2: $translucentWhite3
     --errorBackground: darken(palette.Error['200'], 70%)
 

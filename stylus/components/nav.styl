@@ -61,7 +61,7 @@ $nav-item-icon
         display block
 
     .is-active &
-        color var(--primaryColor)
+        color var(--primaryMain)
 
     :hover > &
         color var(--navTextColor)
@@ -102,12 +102,12 @@ $nav-link
         color  var(--navTextHoverColor)
 
     &.is-active
-        box-shadow   inset rem(4) 0 0 0 var(--primaryColor)
+        box-shadow   inset rem(4) 0 0 0 var(--primaryMain)
         font-weight  bold
         color  var(--navTextActiveColor)
 
         .c-nav-icon
-            color var(--primaryColor)
+            color var(--primaryMain)
 
     +medium-screen()
         display              block

@@ -137,45 +137,49 @@ html, .CozyTheme--normal
     /*
     Primary
 
-    Stylus: primaryColor             - #297EF2, CSS: var(--primaryColor)
-    Stylus: primaryColorDark         - #0B61D6, CSS: var(--primaryColorDark)
-    Stylus: primaryColorLight        - #5C9DF5, CSS: var(--primaryColorLight)
-    Stylus: primaryColorLightest     - #91BFFF, CSS: var(--primaryColorLightest)
+    Stylus: primaryMain         - #297EF2, CSS: var(--primaryMain)
+    Stylus: primaryDark         - #0B61D6, CSS: var(--primaryDark)
+    Stylus: primaryLight        - #5C9DF5, CSS: var(--primaryLight)
+    Stylus: primaryLightest     - #91BFFF, CSS: var(--primaryLightest)
+    Stylus: primaryContrastText - #FFF, CSS: var(--primaryContrastText)
 
     Styleguide Settings.theme.primary
     */
-    --primaryColor palette.Primary['600']
-    --primaryColorDark palette.Primary['700']
-    --primaryColorLight palette.Primary['500']
-    --primaryColorLightest palette.Primary['400']
+    --primaryMain palette.Primary['600']
+    --primaryDark palette.Primary['700']
+    --primaryLight palette.Primary['500']
+    --primaryLightest palette.Primary['400']
+    --primaryContrastText var(--commonWhite)
 
     /*
     Secondary
 
-    Stylus: secondaryColor   - #EA3F3F, CSS: var(--secondaryColor)
-    Stylus: secondaryColorDark   - #D31F1F, CSS: var(--secondaryColorDark)
-    Stylus: secondaryColorLight   - #F96B6B, CSS: var(--secondaryColorLight)
-    Stylus: secondaryColorLightest   - #FF9B9B, CSS: var(--secondaryColorLightest)
+    Stylus: secondaryMain         - #EA3F3F, CSS: var(--secondaryMain)
+    Stylus: secondaryDark         - #D31F1F, CSS: var(--secondaryDark)
+    Stylus: secondaryLight        - #F96B6B, CSS: var(--secondaryLight)
+    Stylus: secondaryLightest     - #FF9B9B, CSS: var(--secondaryLightest)
+    Stylus: secondaryContrastText - #FFF, CSS: var(--secondaryContrastText)
 
     Styleguide Settings.theme.secondary
     */
-    --secondaryColor palette.Error['600']
-    --secondaryColorDark palette.Error['700']
-    --secondaryColorLight palette.Error['500']
-    --secondaryColorLightest palette.Error['400']
+    --secondaryMain palette.Error['600']
+    --secondaryDark palette.Error['700']
+    --secondaryLight palette.Error['500']
+    --secondaryLightest palette.Error['400']
+    --secondaryContrastText var(--commonWhite)
 
     /*
     Background colors
 
-    Stylus: primaryBackgroundLight -  #F7FAFF, CSS: var(--primaryBackgroundLight)
-    Stylus: paperBackgroundColor -  #FFF, CSS: var(--paperBackgroundColor)
-    Stylus: defaultBackgroundColor -  #F4F5F6, CSS: var(--defaultBackgroundColor)
+    Stylus: backgroundPaper        -  #FFF, CSS: var(--backgroundPaper)
+    Stylus: backgroundDefault      -  #F4F5F6, CSS: var(--backgroundDefault)
+    Stylus: backgroundPrimaryLight -  #F7FAFF, CSS: var(--backgroundPrimaryLight)
 
     Styleguide Settings.theme.background
     */
-    --primaryBackgroundLight palette.Primary['50']
-    --paperBackgroundColor var(--commonWhite)
-    --defaultBackgroundColor palette.Grey['100']
+    --backgroundPaper var(--commonWhite)
+    --backgroundDefault palette.Grey['100']
+    --backgroundPrimaryLight palette.Primary['50']
 
     /*
     Text colors
@@ -183,18 +187,13 @@ html, .CozyTheme--normal
     These colors use the alpha layer. Be careful to use the semantic variable.
     Hexadecimal colors are here only as an example on a white background.
 
-    Stylus: primaryTextColor -  #383B43, CSS: var(--primaryTextColor)
-    Stylus: secondaryTextColor - #9D9EA1, CSS: var(--secondaryTextColor)
-    Stylus: primaryContrastTextColor -  #FFF, CSS: var(--primaryContrastTextColor)
-    Stylus: secondaryContrastTextColor -  #FFF, CSS: var(--secondaryContrastTextColor)
+    Stylus: textPrimary   - #383B43, CSS: var(--textPrimary)
+    Stylus: textSecondary - #9D9EA1, CSS: var(--textSecondary)
 
     Styleguide Settings.theme.text
     */
-    --primaryTextColor alpha(palette.Grey['900'], 0.9)
-    --secondaryTextColor alpha(palette.Grey['900'], 0.48)
-    --primaryContrastTextColor var(--commonWhite)
-    --secondaryContrastTextColor var(--commonWhite)
-
+    --textPrimary alpha(palette.Grey['900'], 0.9)
+    --textSecondary alpha(palette.Grey['900'], 0.48)
 
     /*
     Components colors
@@ -202,50 +201,50 @@ html, .CozyTheme--normal
     Be careful to use the semantic variable, not the hexa color.
     In this case the real color is `#1D212A1F`, and becomes `#E3E4E5` on a white background.
 
-    Stylus: dividerColor - #E3E4E5, CSS: var(--dividerColor)
+    Stylus: divider - #E3E4E5, CSS: var(--divider)
 
     Styleguide Settings.theme.components
     */
-    --dividerColor alpha(palette.Grey['900'], 0.12)
+    --divider alpha(palette.Grey['900'], 0.12)
 
     /*
     Intention colors
 
-    Stylus: successColor -  #09AE1C, CSS: var(--successColor)
-    Stylus: warningColor -  #CB8100, CSS: var(--warningColor)
-    Stylus: errorColor -  #EA3F3F, CSS: var(--errorColor)
-    Stylus: infoColor -  #009FA2, CSS: var(--infoColor)
+    Stylus: successMain -  #09AE1C, CSS: var(--successMain)
+    Stylus: warningMain -  #CB8100, CSS: var(--warningMain)
+    Stylus: errorMain   -  #EA3F3F, CSS: var(--errorMain)
+    Stylus: infoMain    -  #009FA2, CSS: var(--infoMain)
 
     Styleguide Settings.theme.intention
     */
-    --successColor palette.Success['600']
-    --warningColor palette.Warning['600']
-    --errorColor palette.Error['600']
-    --errorColorDark palette.Error['700']
-    --errorColorLight palette.Error['500']
-    --errorColorLightest palette.Error['400']
-    --infoColor palette.Info['600']
+    --successMain palette.Success['600']
+    --warningMain palette.Warning['600']
+    --errorMain palette.Error['600']
+    --errorDark palette.Error['700']
+    --errorLight palette.Error['500']
+    --errorLightest palette.Error['400']
+    --infoMain palette.Info['600']
     --errorBackground var(--commonWhite)
 
     /*
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-    --spinnerColor var(--primaryColor)
+    --spinnerColor var(--primaryMain)
 
-    --linkColor var(--primaryColor)
+    --linkColor var(--primaryMain)
     --linkTextDecoration none
-    --linkColorActive var(--primaryColorDark)
+    --linkColorActive var(--primaryDark)
 
-    --invertedTabsActiveTextColor var(--primaryContrastTextColor)
-    --invertedTabsInactiveTextColor var(--primaryContrastTextColor)
-    --invertedTabsIndicatorColor var(--primaryContrastTextColor)
-    --invertedTabsBackgroundColor var(--primaryColor)
+    --invertedTabsActiveTextColor var(--primaryContrastText)
+    --invertedTabsInactiveTextColor var(--primaryContrastText)
+    --invertedTabsIndicatorColor var(--primaryContrastText)
+    --invertedTabsBackgroundColor var(--primaryMain)
 
-    --regularButtonPrimaryColor var(--primaryColor)
-    --regularButtonSecondaryColor var(--primaryColor)
-    --regularButtonActiveColor var(--primaryColorDark)
-    --regularButtonConstrastColor var(--primaryContrastTextColor)
+    --regularButtonPrimaryColor var(--primaryMain)
+    --regularButtonSecondaryColor var(--primaryMain)
+    --regularButtonActiveColor var(--primaryDark)
+    --regularButtonConstrastColor var(--primaryContrastText)
 
     --secondaryButtonPrimaryColor #FFF
     --secondaryButtonSecondaryColor var(--silver)
@@ -268,11 +267,41 @@ html, .CozyTheme--normal
     --navTextHoverColor var(--charcoalGrey)
 
     --alertErrorColor #fff
-    --alertErrorBackgroundColor var(--errorColor)
+    --alertErrorBackgroundColor var(--errorMain)
 
     --alertSuccessColor #fff
-    --alertSuccessBackgroundColor var(--successColor)
+    --alertSuccessBackgroundColor var(--successMain)
 
     --alertInfoColor #fff
     --alertInfoBackgroundColor var(--slateGrey)
+
+    --primaryColor var(--primaryMain)
+    --primaryColorDark var(--primaryDark)
+    --primaryColorLight var(--primaryLight)
+    --primaryColorLightest var(--primaryLightest)
+
+    --secondaryColor var(--secondaryMain)
+    --secondaryColorDark var(--secondaryDark)
+    --secondaryColorLight var(--secondaryLight)
+    --secondaryColorLightest var(--secondaryLightest)
+
+    --primaryBackgroundLight var(--backgroundPrimaryLight)
+    --defaultBackgroundColor var(--backgroundDefault)
+    --paperBackgroundColor var(--backgroundPaper)
+
+    --primaryTextColor var(--textPrimary)
+    --secondaryTextColor var(--textSecondary)
+    --primaryContrastTextColor var(--primaryContrastText)
+    --secondaryContrastTextColor var(--secondaryContrastText)
+
+    --dividerColor var(--divider)
+
+    --successColor var(--successMain)
+    --warningColor var(--warningMain)
+    --errorColor var(--errorMain)
+    --errorColorDark var(--errorDark)
+    --errorColorLight var(--errorLight)
+    --errorColorLightest var(--errorLightest)
+    --infoColor var(--infoMain)
+
 // @stylint on

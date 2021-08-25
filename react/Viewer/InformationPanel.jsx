@@ -12,7 +12,7 @@ const customStyles = () => ({
   },
   drawerPaper: {
     width: infoWidth,
-    backgroundColor: 'var(--defaultBackgroundColor)'
+    backgroundColor: 'var(--backgroundDefault)'
   }
 })
 

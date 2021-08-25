@@ -31,7 +31,7 @@ const HistoryRow = ({
               size={tag ? 'small' : 'xsmall'}
               className={styles.HistoryRowCircle}
             >
-              {tag && <Icon icon={FileIcon} color="var(--primaryTextColor)" />}
+              {tag && <Icon icon={FileIcon} color="var(--textPrimary)" />}
             </Circle>
           </Img>
         </div>
@@ -50,7 +50,7 @@ const HistoryRow = ({
           <Img>
             <Icon
               className="u-c-pointer"
-              color="var(--secondaryTextColor)"
+              color="var(--textSecondary)"
               icon={DownloadIcon}
               onClick={() => downloadLink()}
             />

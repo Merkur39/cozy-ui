@@ -40,7 +40,7 @@ class ExampleMenu extends React.Component {
         anchorElRef={this.ref}
         autoclose={true}
         onClose={this.hideMenu}>
-        <ActionMenuItem left={<Icon icon={FileIcon} />} right={<Icon icon={WarningIcon} color="var(--errorColor)" />}>Item 1</ActionMenuItem>
+        <ActionMenuItem left={<Icon icon={FileIcon} />} right={<Icon icon={WarningIcon} color="var(--errorMain)" />}>Item 1</ActionMenuItem>
         <ActionMenuItem left={<ActionMenuRadio />}>Item 2</ActionMenuItem>
         <ActionMenuItem left={<Icon icon={FileIcon} />}>
           <Typography variant="body1" gutterBottom>

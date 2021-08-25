@@ -34,10 +34,10 @@ const items = [
 
 const Items = ({ items, onClickItem }) => {
   return items.map(item => (
-    <div style={{ color: 'var(--primaryTextColor)', height: '2rem', display: 'flex', alignItems: 'center'}} className={item.items ? 'u-c-pointer' : null } onClick={() => onClickItem(item)}>
+    <div style={{ color: 'var(--textPrimary)', height: '2rem', display: 'flex', alignItems: 'center'}} className={item.items ? 'u-c-pointer' : null } onClick={() => onClickItem(item)}>
       <Icon
         icon={!item.items ? FileIcon : FolderIcon}
-        className='u-mr-half' color='var(--primaryTextColor)' />
+        className='u-mr-half' color='var(--textPrimary)' />
       { item.name }
     </div>
   ))

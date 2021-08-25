@@ -9,9 +9,9 @@
 $coz-bar-size=3rem
 
 .upload-queue
-    border   .0625rem solid var(--dividerColor)
+    border   .0625rem solid var(--divider)
     border-radius    .25rem
-    background-color var(--paperBackgroundColor)
+    background-color var(--backgroundPaper)
     display          flex
     flex-direction   column
     max-width 90%
@@ -33,10 +33,10 @@ $coz-bar-size=3rem
 
 .upload-queue--popover
     z-index           $popover-index
-    border            rem(1) solid var(--dividerColor)
+    border            rem(1) solid var(--divider)
     border-radius     rem(4)
     box-shadow        rem(0 1 3 0) rgba(50, 54, 63, .19), rem(0 6 18 0) rgba(50, 54, 63, .19)
-    background-color  var(--paperBackgroundColor)
+    background-color  var(--backgroundPaper)
     position fixed
     bottom   .5rem
     right    1.5rem
@@ -57,7 +57,7 @@ $coz-bar-size=3rem
     flex-direction   column
     justify-content  center
     height           2rem
-    background-color var(--defaultBackgroundColor)
+    background-color var(--backgroundDefault)
     font-weight      bold
     margin           0
     padding          .5rem 1rem .5rem
@@ -96,7 +96,7 @@ progress.upload-queue-progress
     background-color var(--errorBackground)
 
 .upload-queue-item--done
-    background-color var(--defaultBackgroundColor)
+    background-color var(--backgroundDefault)
 
 .item-file
     user-select none
@@ -115,7 +115,7 @@ progress.upload-queue-progress
     .upload-queue
         border-radius 0
         border 0
-        background-color var(--paperBackgroundColor)
+        background-color var(--backgroundPaper)
         box-shadow none
         width 100%
         max-width 100%
@@ -146,7 +146,7 @@ progress.upload-queue-progress
             width 100%
             height $coz-bar-border-size
             content ''
-            background var(--paperBackgroundColor)
+            background var(--backgroundPaper)
 
         &.upload-queue--visible
             max-height 30%

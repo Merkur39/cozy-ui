@@ -136,14 +136,14 @@ const Item = translate()(
 
     if (statusToUse === LOADING) {
       statusIcon = !progress ? (
-        <Spinner className="u-ml-half" color="var(--primaryColor)" />
+        <Spinner className="u-ml-half" color="var(--primaryMain)" />
       ) : null
     } else if (statusToUse === CANCEL) {
       statusIcon = (
         <Icon
           className="u-ml-half"
           icon={CrossIcon}
-          color="var(--errorColor)"
+          color="var(--errorMain)"
         />
       )
     } else if (ERROR_STATUSES.includes(statusToUse)) {
@@ -152,7 +152,7 @@ const Item = translate()(
         <Icon
           className="u-ml-half"
           icon={WarningIcon}
-          color="var(--errorColor)"
+          color="var(--errorMain)"
         />
       )
     } else if (DONE_STATUSES.includes(statusToUse)) {
@@ -161,7 +161,7 @@ const Item = translate()(
         <Icon
           className="u-ml-half"
           icon={CheckIcon}
-          color="var(--successColor)"
+          color="var(--successMain)"
         />
       )
     } else if (statusToUse === PENDING) {

@@ -16,7 +16,7 @@ exports[`ActionMenu should render examples: ActionMenu 1`] = `
                 <use xlink:href=\\"#file_svg__a\\" fill-rule=\\"evenodd\\"></use>
               </svg></div>
             <div class=\\"styles__bd___1Uv-F u-mr-1 u-stack-xs\\">Item 1</div>
-            <div class=\\"styles__img___3SHpG u-mr-1\\"><svg viewBox=\\"0 0 16 16\\" class=\\"styles__icon___23x3R\\" style=\\"fill: var(--errorColor);\\" width=\\"16\\" height=\\"16\\">
+            <div class=\\"styles__img___3SHpG u-mr-1\\"><svg viewBox=\\"0 0 16 16\\" class=\\"styles__icon___23x3R\\" style=\\"fill: var(--errorMain);\\" width=\\"16\\" height=\\"16\\">
                 <path fill-rule=\\"evenodd\\" d=\\"M7.022 1.736c.543-.959 1.428-.95 1.966 0l6.532 11.529c.543.958.094 1.735-1.016 1.735h-13C.399 15-.051 14.215.487 13.265l6.535-11.53zM7.004 13c0-.552.443-1 1-1 .552 0 1 .444 1 1 0 .553-.444 1-1 1-.553 0-1-.444-1-1zm0-7.997a.999.999 0 011-1.003c.552 0 1 .438 1 1.003v4.994a.999.999 0 01-1 1.003c-.553 0-1-.438-1-1.003V5.003z\\"></path>
               </svg></div>
           </div>
@@ -2427,7 +2427,7 @@ exports[`HistoryRow should render examples: HistoryRow 1`] = `
     <div class=\\"u-media u-media-grow u-row-m\\">
       <div class=\\"styles__HistoryRowCircleWrapper___3r8Uo\\">
         <div class=\\"styles__img___3SHpG styles__HistoryRowMediaImg___1J9OI\\">
-          <div class=\\"styles__c-circle___1DuMR styles__HistoryRowCircle___4FWWa\\" style=\\"--circleSize: 32px;\\"><span class=\\"styles__c-circle-text___1jFgD\\"><svg viewBox=\\"0 0 16 16\\" class=\\"styles__icon___23x3R\\" style=\\"fill: var(--primaryTextColor);\\" width=\\"16\\" height=\\"16\\"><defs><path id=\\"file_svg__a\\" d=\\"M1 1c0-.552.446-1 .998-1H10v5h5v10.004a1 1 0 01-1.007.996H2.007A1.002 1.002 0 011 15V1zm10 3V0l4 4h-4z\\"></path></defs><use xlink:href=\\"#file_svg__a\\" fill-rule=\\"evenodd\\"></use></svg></span></div>
+          <div class=\\"styles__c-circle___1DuMR styles__HistoryRowCircle___4FWWa\\" style=\\"--circleSize: 32px;\\"><span class=\\"styles__c-circle-text___1jFgD\\"><svg viewBox=\\"0 0 16 16\\" class=\\"styles__icon___23x3R\\" style=\\"fill: var(--textPrimary);\\" width=\\"16\\" height=\\"16\\"><defs><path id=\\"file_svg__a\\" d=\\"M1 1c0-.552.446-1 .998-1H10v5h5v10.004a1 1 0 01-1.007.996H2.007A1.002 1.002 0 011 15V1zm10 3V0l4 4h-4z\\"></path></defs><use xlink:href=\\"#file_svg__a\\" fill-rule=\\"evenodd\\"></use></svg></span></div>
         </div>
       </div>
       <div class=\\"u-media u-media-grow u-stack-xs u-row-m\\">
@@ -2435,7 +2435,7 @@ exports[`HistoryRow should render examples: HistoryRow 1`] = `
           <h6 class=\\"MuiTypography-root MuiTypography-h6\\">12/12/12 12:12</h6>
           <h6 class=\\"MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom\\">Current Version</h6><span class=\\"MuiTypography-root MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-gutterBottom\\">10ko</span>
         </div>
-        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--secondaryTextColor);\\" width=\\"16\\" height=\\"16\\">
+        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--textSecondary);\\" width=\\"16\\" height=\\"16\\">
             <path fill-rule=\\"evenodd\\" d=\\"M7 9.586L5.707 8.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L9 9.586V2a1 1 0 10-2 0v7.586zM1 14h14a1 1 0 110 2H1a1 1 0 110-2z\\"></path>
           </svg></div>
       </div>
@@ -2453,7 +2453,7 @@ exports[`HistoryRow should render examples: HistoryRow 1`] = `
           <h6 class=\\"MuiTypography-root MuiTypography-h6\\">12/12/12 12:10</h6>
           <h6 class=\\"MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom\\"></h6><span class=\\"MuiTypography-root MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-gutterBottom\\">9ko</span>
         </div>
-        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--secondaryTextColor);\\" width=\\"16\\" height=\\"16\\">
+        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--textSecondary);\\" width=\\"16\\" height=\\"16\\">
             <path fill-rule=\\"evenodd\\" d=\\"M7 9.586L5.707 8.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L9 9.586V2a1 1 0 10-2 0v7.586zM1 14h14a1 1 0 110 2H1a1 1 0 110-2z\\"></path>
           </svg></div>
       </div>
@@ -2463,7 +2463,7 @@ exports[`HistoryRow should render examples: HistoryRow 1`] = `
     <div class=\\"u-media u-media-grow u-row-m\\">
       <div class=\\"styles__HistoryRowCircleWrapper___3r8Uo\\">
         <div class=\\"styles__img___3SHpG styles__HistoryRowMediaImg___1J9OI\\">
-          <div class=\\"styles__c-circle___1DuMR styles__HistoryRowCircle___4FWWa\\" style=\\"--circleSize: 32px;\\"><span class=\\"styles__c-circle-text___1jFgD\\"><svg viewBox=\\"0 0 16 16\\" class=\\"styles__icon___23x3R\\" style=\\"fill: var(--primaryTextColor);\\" width=\\"16\\" height=\\"16\\"><defs><path id=\\"file_svg__a\\" d=\\"M1 1c0-.552.446-1 .998-1H10v5h5v10.004a1 1 0 01-1.007.996H2.007A1.002 1.002 0 011 15V1zm10 3V0l4 4h-4z\\"></path></defs><use xlink:href=\\"#file_svg__a\\" fill-rule=\\"evenodd\\"></use></svg></span></div>
+          <div class=\\"styles__c-circle___1DuMR styles__HistoryRowCircle___4FWWa\\" style=\\"--circleSize: 32px;\\"><span class=\\"styles__c-circle-text___1jFgD\\"><svg viewBox=\\"0 0 16 16\\" class=\\"styles__icon___23x3R\\" style=\\"fill: var(--textPrimary);\\" width=\\"16\\" height=\\"16\\"><defs><path id=\\"file_svg__a\\" d=\\"M1 1c0-.552.446-1 .998-1H10v5h5v10.004a1 1 0 01-1.007.996H2.007A1.002 1.002 0 011 15V1zm10 3V0l4 4h-4z\\"></path></defs><use xlink:href=\\"#file_svg__a\\" fill-rule=\\"evenodd\\"></use></svg></span></div>
         </div>
       </div>
       <div class=\\"u-media u-media-grow u-stack-xs u-row-m\\">
@@ -2471,7 +2471,7 @@ exports[`HistoryRow should render examples: HistoryRow 1`] = `
           <h6 class=\\"MuiTypography-root MuiTypography-h6\\">12/12/12 12:09</h6>
           <h6 class=\\"MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom\\">V2</h6><span class=\\"MuiTypography-root MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-gutterBottom\\">9ko</span>
         </div>
-        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--secondaryTextColor);\\" width=\\"16\\" height=\\"16\\">
+        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--textSecondary);\\" width=\\"16\\" height=\\"16\\">
             <path fill-rule=\\"evenodd\\" d=\\"M7 9.586L5.707 8.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L9 9.586V2a1 1 0 10-2 0v7.586zM1 14h14a1 1 0 110 2H1a1 1 0 110-2z\\"></path>
           </svg></div>
       </div>
@@ -2489,7 +2489,7 @@ exports[`HistoryRow should render examples: HistoryRow 1`] = `
           <h6 class=\\"MuiTypography-root MuiTypography-h6\\">12/12/12 12:07</h6>
           <h6 class=\\"MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom\\"></h6><span class=\\"MuiTypography-root MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-gutterBottom\\">9ko</span>
         </div>
-        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--secondaryTextColor);\\" width=\\"16\\" height=\\"16\\">
+        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--textSecondary);\\" width=\\"16\\" height=\\"16\\">
             <path fill-rule=\\"evenodd\\" d=\\"M7 9.586L5.707 8.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L9 9.586V2a1 1 0 10-2 0v7.586zM1 14h14a1 1 0 110 2H1a1 1 0 110-2z\\"></path>
           </svg></div>
       </div>
@@ -2507,7 +2507,7 @@ exports[`HistoryRow should render examples: HistoryRow 1`] = `
           <h6 class=\\"MuiTypography-root MuiTypography-h6\\">12/12/12 12:05</h6>
           <h6 class=\\"MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom\\"></h6><span class=\\"MuiTypography-root MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-gutterBottom\\">9ko</span>
         </div>
-        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--secondaryTextColor);\\" width=\\"16\\" height=\\"16\\">
+        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--textSecondary);\\" width=\\"16\\" height=\\"16\\">
             <path fill-rule=\\"evenodd\\" d=\\"M7 9.586L5.707 8.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L9 9.586V2a1 1 0 10-2 0v7.586zM1 14h14a1 1 0 110 2H1a1 1 0 110-2z\\"></path>
           </svg></div>
       </div>
@@ -2525,7 +2525,7 @@ exports[`HistoryRow should render examples: HistoryRow 1`] = `
           <h6 class=\\"MuiTypography-root MuiTypography-h6\\">12/12/12 12:04</h6>
           <h6 class=\\"MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom\\"></h6><span class=\\"MuiTypography-root MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-gutterBottom\\">9ko</span>
         </div>
-        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--secondaryTextColor);\\" width=\\"16\\" height=\\"16\\">
+        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--textSecondary);\\" width=\\"16\\" height=\\"16\\">
             <path fill-rule=\\"evenodd\\" d=\\"M7 9.586L5.707 8.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L9 9.586V2a1 1 0 10-2 0v7.586zM1 14h14a1 1 0 110 2H1a1 1 0 110-2z\\"></path>
           </svg></div>
       </div>
@@ -2535,7 +2535,7 @@ exports[`HistoryRow should render examples: HistoryRow 1`] = `
     <div class=\\"u-media u-media-grow u-row-m\\">
       <div class=\\"styles__HistoryRowCircleWrapper___3r8Uo\\">
         <div class=\\"styles__img___3SHpG styles__HistoryRowMediaImg___1J9OI\\">
-          <div class=\\"styles__c-circle___1DuMR styles__HistoryRowCircle___4FWWa\\" style=\\"--circleSize: 32px;\\"><span class=\\"styles__c-circle-text___1jFgD\\"><svg viewBox=\\"0 0 16 16\\" class=\\"styles__icon___23x3R\\" style=\\"fill: var(--primaryTextColor);\\" width=\\"16\\" height=\\"16\\"><defs><path id=\\"file_svg__a\\" d=\\"M1 1c0-.552.446-1 .998-1H10v5h5v10.004a1 1 0 01-1.007.996H2.007A1.002 1.002 0 011 15V1zm10 3V0l4 4h-4z\\"></path></defs><use xlink:href=\\"#file_svg__a\\" fill-rule=\\"evenodd\\"></use></svg></span></div>
+          <div class=\\"styles__c-circle___1DuMR styles__HistoryRowCircle___4FWWa\\" style=\\"--circleSize: 32px;\\"><span class=\\"styles__c-circle-text___1jFgD\\"><svg viewBox=\\"0 0 16 16\\" class=\\"styles__icon___23x3R\\" style=\\"fill: var(--textPrimary);\\" width=\\"16\\" height=\\"16\\"><defs><path id=\\"file_svg__a\\" d=\\"M1 1c0-.552.446-1 .998-1H10v5h5v10.004a1 1 0 01-1.007.996H2.007A1.002 1.002 0 011 15V1zm10 3V0l4 4h-4z\\"></path></defs><use xlink:href=\\"#file_svg__a\\" fill-rule=\\"evenodd\\"></use></svg></span></div>
         </div>
       </div>
       <div class=\\"u-media u-media-grow u-stack-xs u-row-m\\">
@@ -2543,7 +2543,7 @@ exports[`HistoryRow should render examples: HistoryRow 1`] = `
           <h6 class=\\"MuiTypography-root MuiTypography-h6\\">12/12/12 12:03</h6>
           <h6 class=\\"MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom\\">V1</h6><span class=\\"MuiTypography-root MuiTypography-caption MuiTypography-colorTextSecondary MuiTypography-gutterBottom\\">9ko</span>
         </div>
-        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--secondaryTextColor);\\" width=\\"16\\" height=\\"16\\">
+        <div class=\\"styles__img___3SHpG\\"><svg viewBox=\\"0 0 16 16\\" class=\\"u-c-pointer styles__icon___23x3R\\" style=\\"fill: var(--textSecondary);\\" width=\\"16\\" height=\\"16\\">
             <path fill-rule=\\"evenodd\\" d=\\"M7 9.586L5.707 8.293a1 1 0 00-1.414 1.414l3 3a1 1 0 001.414 0l3-3a1 1 0 00-1.414-1.414L9 9.586V2a1 1 0 10-2 0v7.586zM1 14h14a1 1 0 110 2H1a1 1 0 110-2z\\"></path>
           </svg></div>
       </div>
@@ -4854,7 +4854,7 @@ exports[`Icon should render examples: Icon 4`] = `
 
 exports[`Icon should render examples: Icon 5`] = `
 "<div>
-  <div><svg viewBox=\\"0 0 16 16\\" class=\\"styles__icon___23x3R\\" style=\\"fill: var(--errorColor);\\" width=\\"32\\" height=\\"32\\">
+  <div><svg viewBox=\\"0 0 16 16\\" class=\\"styles__icon___23x3R\\" style=\\"fill: var(--errorMain);\\" width=\\"32\\" height=\\"32\\">
       <path fill-rule=\\"evenodd\\" d=\\"M7.022 1.736c.543-.959 1.428-.95 1.966 0l6.532 11.529c.543.958.094 1.735-1.016 1.735h-13C.399 15-.051 14.215.487 13.265l6.535-11.53zM7.004 13c0-.552.443-1 1-1 .552 0 1 .444 1 1 0 .553-.444 1-1 1-.553 0-1-.444-1-1zm0-7.997a.999.999 0 011-1.003c.552 0 1 .438 1 1.003v4.994a.999.999 0 01-1 1.003c-.553 0-1-.438-1-1.003V5.003z\\"></path>
     </svg><span>← Click it</span></div>
 </div>"

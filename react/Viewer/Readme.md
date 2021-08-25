@@ -124,7 +124,7 @@ const useStyles = makeStyles({
     height: '100%',
     paddingLeft: '1rem',
     paddingRight: '1rem',
-    borderTop: '1px solid var(--dividerColor)'
+    borderTop: '1px solid var(--divider)'
   }
 })
 

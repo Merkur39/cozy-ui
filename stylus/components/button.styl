@@ -21,7 +21,7 @@ secondaryTheme = {
     contrastColor: var(--secondaryButtonContrastColor)
 }
 ghostTheme = {
-    primaryColor: var(--zircon), secondaryColor: palette['frenchPass'], activeColor: palette['frenchPass'], contrastColor: var(--primaryColor)
+    primaryColor: var(--zircon), secondaryColor: palette['frenchPass'], activeColor: palette['frenchPass'], contrastColor: var(--primaryMain)
 }
 highlightTheme = {
     primaryColor: palette['emerald'], secondaryColor: palette['emerald'], activeColor: palette['malachite'], contrastColor: var(--white)
@@ -36,7 +36,7 @@ dangerOutlineTheme = {
     primaryColor: var(--white), secondaryColor: palette['yourPink'], activeColor: palette['yourPink'], contrastColor: palette['pomegranate']
 }
 text = {
-    primaryColor: transparent, secondaryColor: transparent, activeColor: transparent, contrastColor: var(--primaryColor)
+    primaryColor: transparent, secondaryColor: transparent, activeColor: transparent, contrastColor: var(--primaryMain)
 }
 
 // We turn stylint off since without semicolons, stylus fails to
@@ -152,7 +152,7 @@ $button--text
 $button--text
     &:hover
     &:focus
-        color var(--primaryColorDark)
+        color var(--primaryDark)
 
 $button--action
     @extend $button--alpha
@@ -401,7 +401,7 @@ $actionbtn
         flex-wrap nowrap
 
     [data-action='icon']
-        border-left rem(1) solid var(--dividerColor)
+        border-left rem(1) solid var(--divider)
 
     &:not([disabled]):hover
     &:not([disabled]):focus
@@ -542,7 +542,7 @@ $button-subtle
     &:hover
     &:focus
     &:visited
-        color var(--primaryColorDark)
+        color var(--primaryDark)
         background transparent
 
     * + &

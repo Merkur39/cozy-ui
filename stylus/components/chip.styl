@@ -53,14 +53,14 @@ $normal-theme-chip
     color inherit
 
 $primary-theme-chip
-    border-color var(--primaryColorLightest)
-    background-color var(--primaryBackgroundLight)
-    color var(--primaryColor)
+    border-color var(--primaryLightest)
+    background-color var(--backgroundPrimaryLight)
+    color var(--primaryMain)
 
 $error-theme-chip
-    border-color var(--errorColorLight)
-    background-color var(--errorColorLightest)
-    color var(--errorColor)
+    border-color var(--errorLight)
+    background-color var(--errorLightest)
+    color var(--errorMain)
 
 $chip--hoverableNormalTheme
     color var(--charcoalGrey)
@@ -72,16 +72,16 @@ $chip--hoverableNormalTheme
 $chip--hoverablePrimaryTheme
     &:hover,
     &:focus
-        background-color var(--primaryBackgroundLight)
+        background-color var(--backgroundPrimaryLight)
 
 $chip--normalPrimaryTheme
-    background-color var(--primaryColor)
+    background-color var(--primaryMain)
     color var(--white)
 
 $chip--hoverableErrorTheme
     &:hover,
     &:focus
-        background-color var(--errorColorLight)
+        background-color var(--errorLight)
 
 $chip--outlinedNormalTheme
     background-color transparent
@@ -91,7 +91,7 @@ $chip--clickable
 
 $chip-separator
     width rem(1)
-    border-left rem(1) solid var(--dividerColor)
+    border-left rem(1) solid var(--divider)
     display inline-block
     height 40%
     margin-left rem(8)
