@@ -5,15 +5,76 @@ $translucentWhite1=rgba(255, 255, 255, 0.24)
 $translucentWhite2=rgba(255, 255, 255, 0.88)
 $translucentWhite3=rgba(255, 255, 255, 0.16)
 
+/*
+root overrides are only for depracted variables.
+*/
 :root
     --invertedBackgroundColor: var(--primaryMain)
     --invertedContrastTextColor: var(--primaryContrastText)
 
 .CozyTheme--inverted
-    --textPrimary: var(--invertedContrastTextColor)
-    --textSecondary: var(--invertedContrastTextColor)
-    --iconColor: var(--textSecondary)
-    --textIconColor: var(--invertedContrastTextColor)
+    --textPrimary palette.Common['white']
+    --textSecondary alpha(palette.Common['white'], 0.64)
+    --textDisabled alpha(palette.Common['white'], 0.4)
+    --textHint alpha(palette.Common['white'], 0.4)
+    --textIcon palette.Common['white']
+
+    --actionActive palette.Common['white']
+    --actionHover alpha(palette.Common['white'], 0.08)
+    --actionSelected alpha(palette.Common['white'], 0.16)
+    --actionDisabled alpha(palette.Common['white'], 0.32)
+    --actionDisabledBackground alpha(palette.Common['white'], 0.12)
+    --actionFocus alpha(palette.Common['white'], 0.24)
+    --actionGhost alpha(palette.Common['white'], 0.08)
+    --actionHoverGhost alpha(palette.Common['white'], 0.16)
+
+    --divider alpha(palette.Common['white'], 0.16)
+
+    --borderMain alpha(palette.Common['white'], 0.24)
+    --borderDisabled alpha(palette.Common['white'], 0.12)
+    --borderGhost alpha(palette.Common['white'], 0.48)
+    --borderGhostDisabled alpha(palette.Common['white'], 0.24)
+
+    --backgroundPaper palette.Common['white']
+    --backgroundDefault palette.Primary['600']
+
+    --primaryLight palette.Common['white']
+    --primaryMain palette.Common['white']
+    --primaryDark palette.Primary['100']
+    --primaryContrastText palette.Primary['600']
+
+    --secondaryLight palette.Secondary['100']
+    --secondaryMain palette.Secondary['200']
+    --secondaryDark palette.Secondary['300']
+    --secondaryContrastText palette.Common['white']
+
+    --errorLight palette.Error['100']
+    --errorMain palette.Error['200']
+    --errorDark palette.Error['300']
+    --errorContrastText palette.Common['white']
+    --errorBackground: darken(palette.Error['200'], 70%)
+
+    --warningLight palette.Warning['100']
+    --warningMain palette.Warning['200']
+    --warningDark palette.Warning['300']
+    --warningContrastText palette.Common['white']
+
+    --successLight palette.Success['100']
+    --successMain palette.Success['200']
+    --successDark palette.Success['300']
+    --successContrastText palette.Common['white']
+
+    --infoLight palette.Info['100']
+    --infoMain palette.Info['200']
+    --infoDark palette.Info['300']
+    --infoContrastText palette.Common['white']
+
+    /*
+    The CSS variables below are historic and we should strive not to
+    use them. Prefer to use directly semantic colors above.
+    */
+    --iconColor var(--textSecondary)
+    --textIconColor var(--invertedContrastTextColor)
     --barIconColor var(--invertedContrastTextColor)
     --barIconColorDisabled $translucentWhite2
 
@@ -22,23 +83,14 @@ $translucentWhite3=rgba(255, 255, 255, 0.16)
     --linkColorActive var(--invertedContrastTextColor)
     --linkTextDecoration underline
 
-    --regularButtonPrimaryColor: var(--invertedContrastTextColor)
+    --regularButtonPrimaryColor var(--invertedContrastTextColor)
     --regularButtonSecondaryColor: var(--invertedContrastTextColor)
-    --regularButtonActiveColor: $translucentWhite2
-    --regularButtonConstrastColor: var(--invertedBackgroundColor)
+    --regularButtonActiveColor $translucentWhite2
+    --regularButtonConstrastColor var(--invertedBackgroundColor)
 
-    --secondaryButtonPrimaryColor: var(--invertedBackgroundColor)
-    --secondaryButtonSecondaryColor: var(--invertedContrastTextColor)
-    --secondaryButtonActiveColor: $translucentWhite1
+    --secondaryButtonPrimaryColor var(--invertedBackgroundColor)
+    --secondaryButtonSecondaryColor var(--invertedContrastTextColor)
+    --secondaryButtonActiveColor $translucentWhite1
     --secondaryButtonContrastColor: var(--invertedContrastTextColor)
 
-    --errorMain: palette.Error['200']
-    --successMain: palette.Success['200']
-    --warningMain: palette.Warning['200']
-
-    --backgroundPaper: var(--primaryMain)
-    --backgroundDefault: var(--primaryDark)
-    --divider: $translucentWhite3
-    --dividerColor2: $translucentWhite3
-    --errorBackground: darken(palette.Error['200'], 70%)
-
+    --dividerColor2 $translucentWhite3
