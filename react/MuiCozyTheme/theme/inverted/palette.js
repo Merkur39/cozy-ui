@@ -6,36 +6,36 @@ const invertedPalette = {
   ...normalPalette,
   type: 'dark',
   background: {
-    default: getCssVariableValue('primaryColorDark'),
-    paper: getCssVariableValue('primaryColor'),
-    selected: getCssVariableValue('primaryColorDark')
+    default: getCssVariableValue('primaryDark'),
+    paper: getCssVariableValue('primaryMain'),
+    selected: getCssVariableValue('primaryDark')
   },
   primary: {
-    main: '#FFFFFF'
+    main: getCssVariableValue('primaryMain')
   },
   secondary: {
-    main: '#FFFFFF'
+    main: getCssVariableValue('secondaryMain')
   },
   text: {
-    primary: '#FFFFFF',
-    secondary: '#FFFFFF'
+    primary: getCssVariableValue('textPrimary'),
+    secondary: getCssVariableValue('textSecondary')
   },
   success: {
-    main: defaultPalette.Success['400']
+    main: getCssVariableValue('successMain')
   },
   error: {
-    main: '#fcc0c0' // lighten(--errorColor, 70%)
+    main: getCssVariableValue('errorMain')
   },
-  divider: '#FFFFFF29' // 16% opacity
+  divider: getCssVariableValue('divider')
 }
 
 invertedPalette.action = {
-  active: `${invertedPalette.primary.main}8A`, // 54% opacity
-  hover: `${invertedPalette.primary.main}0A`, // 4% opacity
-  selected: `${invertedPalette.primary.main}14`, // 8% opacity
-  disabled: `${invertedPalette.primary.main}40`, // 26% opacity
-  disabledBackground: `${invertedPalette.primary.main}1F`, // 12% opacity
-  focus: `${invertedPalette.primary.main}1F` // 12% opacity
+  active: getCssVariableValue('actionActive'),
+  hover: getCssVariableValue('actionHover'),
+  selected: getCssVariableValue('actionSelected'),
+  disabled: getCssVariableValue('actionDisabled'),
+  disabledBackground: getCssVariableValue('actionDisabledBackground'),
+  focus: getCssVariableValue('actionFocus')
 }
 
 export default invertedPalette

@@ -3,23 +3,23 @@ import { getCssVariableValue } from '../../utils/color'
 const normalPalette = {
   type: 'light',
   primary: {
-    light: getCssVariableValue('primaryColorLight'),
-    main: getCssVariableValue('primaryColor'),
-    dark: getCssVariableValue('primaryColorDark'),
-    contrastText: getCssVariableValue('primaryContrastTextColor')
+    light: getCssVariableValue('primaryLight'),
+    main: getCssVariableValue('primaryMain'),
+    dark: getCssVariableValue('primaryDark'),
+    contrastText: getCssVariableValue('primaryContrastText')
   },
   error: {
-    main: getCssVariableValue('errorColor')
+    main: getCssVariableValue('errorMain')
   },
   secondary: {
-    light: getCssVariableValue('secondaryColorLight'),
-    main: getCssVariableValue('secondaryColor'),
-    dark: getCssVariableValue('secondaryColorDark'),
-    contrastText: getCssVariableValue('secondaryContrastTextColor')
+    light: getCssVariableValue('secondaryLight'),
+    main: getCssVariableValue('secondaryMain'),
+    dark: getCssVariableValue('secondaryDark'),
+    contrastText: getCssVariableValue('secondaryContrastText')
   },
   text: {
-    primary: getCssVariableValue('primaryTextColor'),
-    secondary: getCssVariableValue('secondaryTextColor')
+    primary: getCssVariableValue('textPrimary'),
+    secondary: getCssVariableValue('textSecondary')
   },
   grey: {
     0: getCssVariableValue('white'),
@@ -30,14 +30,14 @@ const normalPalette = {
     800: getCssVariableValue('charcoalGrey'),
     900: getCssVariableValue('black')
   },
-  divider: getCssVariableValue('dividerColor'),
+  divider: getCssVariableValue('divider'),
   actions: {
-    focus: 'rgba(0, 0, 0, 0.12)'
+    focus: getCssVariableValue('actionsFocus')
   }
 }
 
 normalPalette.background = {
-  default: normalPalette.grey[100],
+  default: getCssVariableValue('backgroundDefault'),
   selected: '#F5FAFF'
 }
 
