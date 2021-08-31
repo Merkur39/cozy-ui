@@ -3,9 +3,18 @@ import cx from 'classnames'
 import Typography from '../Typography'
 import styles from './styles.styl'
 
-const Tile = ({ children, className, tag: Tag, ...props }) => {
+const Tile = ({ children, className, tag: Tag, isGreyedOut, ...props }) => {
   return (
-    <Tag className={cx(styles.Tile, className)} {...props}>
+    <Tag
+      className={cx(
+        styles.Tile,
+        {
+          [styles['Tile-greyed']]: isGreyedOut
+        },
+        className
+      )}
+      {...props}
+    >
       {children}
     </Tag>
   )
