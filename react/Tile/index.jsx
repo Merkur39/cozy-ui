@@ -21,11 +21,20 @@ const Tile = ({ children, className, tag: Tag, isGreyedOut, ...props }) => {
 }
 
 export const TileDescription = ({ children, className }) => {
-  return <div className={`${styles['Tile-desc']} ${className}`}>{children}</div>
+  return <div className={cx(styles['Tile-desc'], className)}>{children}</div>
 }
 
-export const TileTitle = ({ children, className }) => (
-  <Typography variant="h6" className={`${styles['Tile-title']} ${className}`}>
+export const TileTitle = ({ children, className, isMultiline }) => (
+  <Typography
+    variant="h6"
+    className={cx(
+      styles['Tile-title'],
+      {
+        [styles['Tile-title-multiline']]: isMultiline
+      },
+      className
+    )}
+  >
     {children}
   </Typography>
 )
