@@ -36,10 +36,16 @@ export const TileSubtitle = ({ children }) => (
   </Typography>
 )
 
-export const TileFooter = ({ children, className }) => (
+export const TileFooter = ({ children, className, isAccent }) => (
   <Typography
     variant="caption"
-    className={`${styles['Tile-status']} ${className}`}
+    className={cx(
+      styles['Tile-status'],
+      {
+        [styles['Tile-status-accent']]: isAccent
+      },
+      className
+    )}
   >
     {children}
   </Typography>
