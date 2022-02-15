@@ -10413,6 +10413,7 @@ body {
 .c-avatar--ghost--3898R {
   background-color: transparent !important;
   border: 1px dashed var(--borderGhostColor);
+  box-sizing: border-box;
   color: var(--secondaryTextColor);
 }
 .c-avatar--ghost--3898R .c-avatar-image--3yJnb {
