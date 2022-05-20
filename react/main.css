@@ -1318,8 +1318,9 @@ body {
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -6317,8 +6318,9 @@ body {
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -8758,8 +8760,9 @@ body {
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -12573,8 +12576,9 @@ body {
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -13057,8 +13061,9 @@ html,
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -13417,8 +13422,10 @@ html,
   border: 0;
   cursor: pointer;
   padding: 0.5rem 1rem;
+  color: var(--primaryTextColor);
 }
 .c-DropdownButton-Icon--ohvD2 {
+  color: var(--iconTextColor);
   margin-top: 0.25rem;
   margin-left: 0.25rem;
 }
@@ -13531,8 +13538,9 @@ html,
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -13989,15 +13997,14 @@ html,
 .DateMonthPicker__YearButton--3zNDK:hover,
 .DateMonthPicker__MonthButton--3I_Mm:hover,
 .DateMonthPicker__MonthButton--3I_Mm.DateMonthPicker__MonthButton--selected--40hCm {
-  background: var(--paleGrey);
-  color: var(--charcoalGrey);
+  background: var(--defaultBackgroundColor);
+  color: var(--primaryTextColor);
 }
 .DateMonthPicker__YearButton--3zNDK:active,
 .DateMonthPicker__YearButton--3zNDK:hover:active,
 .DateMonthPicker__MonthButton--3I_Mm:active,
 .DateMonthPicker__MonthButton--3I_Mm:hover:active {
-  background-color: var(--silver);
-  color: var(--charcoalGrey);
+  background-color: var(--actionColorFocus);
   font-weight: bold;
   outline: 0;
 }
@@ -14008,7 +14015,7 @@ html,
   min-width: 3rem;
   display: inline-block;
   border-width: 0;
-  color: var(--coolGrey);
+  color: var(--secondaryTextColor);
   cursor: pointer;
 }
 .DateMonthPicker__YearButton--3zNDK:focus,
@@ -14020,7 +14027,7 @@ html,
   display: flex;
   align-items: center;
   border-radius: 8px;
-  border: 1px solid var(--silver);
+  border: 1px solid var(--borderMainColor);
   overflow: hidden;
 }
 .DateMonthPicker__YearControls--1DGlB {
@@ -16696,8 +16703,9 @@ html,
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -18617,6 +18625,29 @@ html {
   flex-shrink: 0;
 }
 
+.media--cSJMp {
+  display: flex;
+  align-items: center;
+}
+.media--top--K9w0I {
+  align-items: flex-start;
+}
+.media--bottom--21YWJ {
+  align-items: flex-end;
+}
+.bd--1Uv-F {
+  flex: 1 1 auto;
+  overflow: hidden;
+}
+.img--3SHpG {
+  line-height: 0;
+  flex: 0 0 auto;
+}
+
+.icon--gvQ89 {
+  margin: 1rem 1.5rem 0 0.5rem;
+}
+
 .CollectionField__addBtn--Z0FO- {
   margin-left: 0;
   margin-right: 0;
@@ -19337,25 +19368,6 @@ html {
   padding-left: 1rem;
   padding-right: 1rem;
   font-weight: bold;
-}
-
-.media--cSJMp {
-  display: flex;
-  align-items: center;
-}
-.media--top--K9w0I {
-  align-items: flex-start;
-}
-.media--bottom--21YWJ {
-  align-items: flex-end;
-}
-.bd--1Uv-F {
-  flex: 1 1 auto;
-  overflow: hidden;
-}
-.img--3SHpG {
-  line-height: 0;
-  flex: 0 0 auto;
 }
 
 .Modal__back--qxUn_ {
@@ -20349,8 +20361,9 @@ body {
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -20947,8 +20960,9 @@ html {
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -22317,8 +22331,9 @@ html {
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -22737,8 +22752,9 @@ html,
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -23094,7 +23110,7 @@ html,
   }
 }
 .InfosCarrousel-separator--AvH5m {
-  border-left: 1px solid var(--silver);
+  border-left: 1px solid var(--dividerColor);
   height: 1rem;
   margin: 0 0.5rem;
 }
@@ -23153,8 +23169,9 @@ html,
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -25576,7 +25593,7 @@ html {
   cursor: pointer;
 }
 .c-actionmenu-item--gODqd:hover {
-  background-color: var(--paleGrey);
+  background-color: var(--actionColorHover);
 }
 .c-actionmenu-radio--Km9uj {
   height: 1rem;
@@ -26720,8 +26737,9 @@ html {
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -27838,8 +27856,9 @@ html,
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -30888,8 +30907,9 @@ html {
     The CSS variables below are historic and we should strive not to
     use them. Prefer to use directly semantic colors above.
     */
-  --iconColor: var(--secondaryTextColor);
+  --iconColor: currentColor;
   --textIconColor: #fff;
+  --actionMenuIconColor: #fff;
   --barIconColor: #fff;
   --barIconColorDisabled: rgba(255,255,255,0.88);
   --spinnerColor: #fff;
@@ -31541,7 +31561,7 @@ html {
   min-width: 13.75rem;
   overflow: hidden;
   border: 0;
-  color: var(--charcoalGrey);
+  color: var(--primaryTextColor);
 }
 .c-menu--left--3wamY .c-menu__inner--2g_mC {
   left: 0;
@@ -31566,13 +31586,12 @@ html {
   cursor: pointer;
   padding: 0.5rem;
   line-height: 1.15;
-  color: var(--charcoalGrey);
+  color: var(--primaryTextColor);
 }
 .c-menu__item-icon--kzdkW {
   margin-top: 0.125em;
   margin-right: 0.75rem;
   margin-left: 0.25rem;
-  color: var(--slateGrey);
 }
 .c-menu__item-icon--kzdkW svg {
   width: 1em;
@@ -31580,7 +31599,7 @@ html {
 }
 .c-menu__item--1sXjs:hover,
 .c-menu__item--1sXjs:focus {
-  background-color: var(--paleGrey);
+  background-color: var(--actionColorHover);
   outline: none;
 }
 .c-menu__item--disabled--OHDks {
