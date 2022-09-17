@@ -67,7 +67,7 @@
   "devDependencies": {
     "@argos-ci/cli": "^0.2.1",
     "@babel/cli": "7.17.6",
-    "@babel/core": "7.17.8",
+    "@babel/core": "7.19.1",
     "@babel/helper-builder-react-jsx": "7.16.7",
     "@babel/helper-define-map": "7.16.7",
     "@babel/helper-regex": "7.10.5",
